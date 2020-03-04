@@ -17,8 +17,8 @@
 ##### Depends On:
 * Xorg
 * make
-***
+******
 ##### Install:
 Run the following command by root:
-<br/>
+
 `make clean install`
