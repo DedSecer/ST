@@ -6,6 +6,13 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "SauceCodePro Nerd Font Mono:pixelsize=24:antialias=true:autohint=true";
+
+/* Spare fonts */
+static char *font2[] = {
+/*	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
+/*	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", */
+};
+
 static int borderpx = 2;
 
 /*
@@ -158,10 +165,10 @@ static unsigned int mousebg = 0;
 static unsigned int defaultattr = 11;
 /// Colors for the entities that are highlighted in normal mode.
 static unsigned int highlightBg = 160;
-static unsigned int highlightFg = 15;
+static unsigned int highlightFg = 8;
 /// Colors for the line and column that is marked 'current' in normal mode.
-static unsigned int currentBg = 0;
-static unsigned int currentFg = 15;
+static unsigned int currentBg = 256;
+static unsigned int currentFg = 257;
 
 /*
  * Force mouse select/shortcuts while mask is active (when MODE_MOUSE is set).
