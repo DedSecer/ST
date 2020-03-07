@@ -17,6 +17,7 @@
 ##### Depends On:
 * Xorg
 * make
+* gcc
 
 ******
 
