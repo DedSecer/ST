@@ -133,8 +133,9 @@ static unsigned int defaultrcs = 257;
  * will reverse too. Another logic would only make the simple feature too
  * complex.
  */
-unsigned int defaultitalic = 257;
-unsigned int defaultunderline = 257;
+unsigned int defaultitalic = 7;
+unsigned int defaultunderline = 7;
+
 /*
  * Default shape of cursor
  * 2: Block ("█")
