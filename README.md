@@ -14,12 +14,6 @@
 
 ******
 
-##### Depends On:
-* Xorg
-* make
-* gcc
-
-******
 
 ##### Install:
 Run the following command by root:
