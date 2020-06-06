@@ -196,7 +196,7 @@ static MouseShortcut mshortcuts[] = {
 
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
-	{ AltMask,              XK_c,           normalMode,     {.i =  0} },
+/*	{ AltMask,              XK_v,           normalMode,     {.i =  0} },*/
 	{ XK_ANY_MOD,           XK_Break,       sendbreak,      {.i =  0} },
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
@@ -205,6 +205,8 @@ static Shortcut shortcuts[] = {
 	{ AltMask,    	        XK_minus,       zoom,           {.f = -1} },
 	{ AltMask,              XK_BackSpace,   zoomreset,      {.f =  0} },
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
+	{ MODKEY,               XK_p,           clippaste,      {.i =  0} },
+	{ MODKEY,               XK_y,           clipcopy,       {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
