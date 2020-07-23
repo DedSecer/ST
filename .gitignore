@@ -1,3 +1,5 @@
 *.o
 *.orig
 st
+
+config.h
