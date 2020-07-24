@@ -201,8 +201,11 @@ static MouseShortcut mshortcuts[] = {
 #define TERMMOD (ControlMask|ShiftMask)
 
 /*
-static char *openurlcmd[] = { "/bin/sh", "-c",
-	"YOUR SCRIPT",
+char script[]="\
+";
+
+static char *save[] = { "/bin/sh", "-c",
+	script,
 	"externalpipe", NULL };
 */
 
@@ -225,6 +228,7 @@ static Shortcut shortcuts[] = {
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
 	{ MODKEY,				XK_k,			kscrollup,      {.i =  1} },
 	{ MODKEY,				XK_j,			kscrolldown,    {.i =  1} },
+//	{ MODKEY,				XK_h,			externalpipe,   {.v =  save} },
 };
 
 /*
