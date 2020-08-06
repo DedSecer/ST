@@ -2,33 +2,30 @@
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	[0] = "black", /* black   */
+	[1] = "red3", /* red     */
+	[2] = "green3", /* green   */
+	[3] = "yellow3", /* yellow  */
+	[4] = "blue2", /* blue    */
+	[5] = "magenta3", /* magenta */
+	[6] = "cyan3", /* cyan    */
+	[7] = "gray90", /* white   */
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+	[8]  = "gray50", /* black   */
+	[9]  = "red", /* red     */
+	[10] = "green", /* green   */
+	[11] = "yellow", /* yellow  */
+	[12] = "#5c5cff", /* blue    */
+	[13] = "magenta", /* magenta */
+	[14] = "cyan", /* cyan    */
+	[15] = "white", /* white   */
 
-	[255] = 0,
-
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
-	"black",
+	/* special colors */
+	[256] = "#cccccc",
+	[257] = "#555555",
+	[258] = "black",
 };
-
 
 /*
  * Default colors (colorname index)
