@@ -141,7 +141,7 @@ static MouseShortcut mshortcuts[] = {
 #define AltMask Mod1Mask
 #define TERMMOD (ControlMask|ShiftMask)
 
-char script[]="sed 's/ /\\n/g' | sed '/^$/d' | dmenu | xargs echo -n | xclip -selection c";
+char script[]="sed 's/ /\\n/g' | sed '/^$/d' | dmenu -i -l 10 -p 'st' | xargs echo -n | xclip -selection c";
 
 static char *save[] = { "/bin/sh", "-c",
 	script,
